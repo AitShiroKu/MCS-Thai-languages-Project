@@ -120,19 +120,19 @@ cd /opt/mcsmanager/
 wget https://github.com/MCSManager/MCSManager/releases/latest/download/mcsmanager_linux_release.tar.gz
 tar -zxf mcsmanager_linux_release.tar.gz
 
-# Install dependencies
+# ติดตั้ง dependencies
 ./install.sh
 
-# Please open two terminals or screens.
+# กรุณาเปิดเทอร์มินัลหรือหน้าจอสองจอ.
 
-# Start the daemon first.
+# เริ่ม daemon ก่อน.
 ./start-daemon.sh
 
-# Start the web interface at the second terminal or screen.
+# เริ่มต้นอินเทอร์เฟซเว็บที่เทอร์มินัลหรือหน้าจอที่สอง.
 ./start-web.sh
 
-# For web access, go to http://localhost:23333/
-# In general, the web interface will automatically scan and add the local daemon.
+# สำหรับการเข้าถึงหน้าเว็ป ไปที่ http://localhost:23333/
+# โดยทั่วไปอินเทอร์เฟซเว็บจะสแกนและเพิ่ม local Daemon โดยอัตโนมัติ.
 ```
 
 This installation approach does not automatically set up MCSManager as a system service. Therefore, it is necessary to use `screen` for management. For those interested in managing MCSManager through a system service, please refer to our wiki/documentation.
