@@ -135,20 +135,20 @@ tar -zxf mcsmanager_linux_release.tar.gz
 # โดยทั่วไปอินเทอร์เฟซเว็บจะสแกนและเพิ่ม local Daemon โดยอัตโนมัติ.
 ```
 
-This installation approach does not automatically set up MCSManager as a system service. Therefore, it is necessary to use `screen` for management. For those interested in managing MCSManager through a system service, please refer to our wiki/documentation.
+วิธีการติดตั้งนี้จะไม่ตั้งค่า MCSManager เป็นบริการระบบโดยอัตโนมัติ ดังนั้น จึงจำเป็นต้องใช้ `screen` สำหรับการจัดการ สำหรับผู้ที่สนใจในการจัดการ MCSManager ผ่านบริการระบบ โปรดดูที่ wiki/documentation ของเรา
 
 <br />
 
 ## Development
 
-This section is specifically designed for developers. General users may disregard this portion without concern.
+ส่วนนี้ได้รับการออกแบบมาโดยเฉพาะสำหรับนักพัฒนา ผู้ใช้ทั่วไปสามารถละเลยส่วนนี้ได้โดยไม่ต้องกังวล
 
 ### Plugins
 
-We use "VS Code" to develop MCSManager. You may need to install these plugins:
+เราใช้ "VS Code" เพื่อพัฒนา MCSManager คุณอาจต้องติดตั้งปลั๊กอินเหล่านี้:
 
-- i18n display support (I18n Ally)
-- Code formatter (Prettier)
+- รองรับการแสดงผล i18n (I18n Ally)
+- ตัวจัดรูปแบบโค้ด (Prettier)
 - Vue - Offcial
 - ESLint
 
@@ -170,7 +170,7 @@ git clone https://github.com/MCSManager/MCSManager.git
 
 ### Dependency Files
 
-You'll need to go to the [PTY](https://github.com/MCSManager/PTY) and [Zip-Tools](https://github.com/MCSManager/Zip-Tools) projects to download the corresponding binary files and place them in the `daemon/lib` directory to ensure the proper functioning of the `Emulation Terminal` and `File Decompression`.
+คุณต้องการไปที่ [PTY](https://github.com/MCSManager/PTY) และ [Zip-Tools](https://github.com/MCSManager/Zip-Tools) โครงการที่จะดาวน์โหลดไฟล์ไบนารีที่สอดคล้องกันและวางไว้ในไดเร็กทอรี `daemon/lib` เพื่อให้แน่ใจว่า `Emulation Terminal` และ `File Decompression` ทำงานอย่างเหมาะสม
 
 ### Build Production Version
 
@@ -185,30 +185,30 @@ Output Directory: "production-code"
 
 ## Code Contributing
 
-If you experience any problems while using MCSManager, you are welcome to [submit an Issue](https://github.com/MCSManager/MCSManager/issues/new/choose). Alternatively, you can fork the project and contribute directly by submitting a Pull Request.
+หากคุณพบปัญหาใดๆ ขณะใช้ MCSManager คุณสามารถ [ส่งปัญหา](https://github.com/MCSManager/MCSManager/issues/new/choose) ได้หรือคุณสามารถแยกโปรเจ็กต์และมีส่วนร่วมโดยตรงได้โดยส่ง Pull Request
 
-Please ensure that any submitted code adheres to our existing coding style. For more details, refer to the guidelines provided in [this issue](https://github.com/MCSManager/MCSManager/issues/544).
+โปรดตรวจสอบให้แน่ใจว่าโค้ดที่ส่งมาทั้งหมดเป็นไปตามรูปแบบการเขียนโค้ดที่มีอยู่ของเรา สำหรับรายละเอียดเพิ่มเติม โปรดดูแนวทางที่ระบุไว้ใน [ฉบับนี้](https://github.com/MCSManager/MCSManager/issues/544)
 
 <br />
 
 ## Browser Compatibility
 
-- Supported on modern browsers including `Chrome`, `Firefox`, and `Safari`.
-- Support for `IE` has been discontinued.
+- รองรับบนเบราว์เซอร์สมัยใหม่รวมถึง `Chrome` `Firefox` และ `Safari`
+- การสนับสนุน `IE` ถูกยกเลิกแล้ว
 
 <br />
 
 ## BUG Reporting
 
-**Open Issue:** [Click here](https://github.com/MCSManager/MCSManager/issues/new/choose)
+**ปัญหาที่ยังไม่ได้รับการแก้ไข:** [คลิกที่นี่](https://github.com/MCSManager/MCSManager/issues/new/choose)
 
-**Security Vulnerability Report:** [SECURITY.md](SECURITY.md)
+**รายงานช่องโหว่ด้านความปลอดภัย:** [SECURITY.md](SECURITY.md)
 
 <br />
 
 ## Internationalization
 
-Thanks to these contributors for providing a substantial amount of translation:
+ขอขอบคุณผู้สนับสนุนเหล่านี้ที่จัดทำการแปลจำนวนมาก:
 
 - [KevinLu2000](https://github.com/KevinLu2000)
 - [Unitwk](https://github.com/unitwk)
@@ -219,6 +219,6 @@ Thanks to these contributors for providing a substantial amount of translation:
 
 ## License
 
-The source code of MCSManager is licensed under the [Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0) License.
+ซอร์สโค้ดของ MCSManager ได้รับอนุญาตภายใต้ใบอนุญาต [Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)
 
-Copyright ©2025 MCSManager.
+ลิขสิทธิ์ ©2025 MCSManager
