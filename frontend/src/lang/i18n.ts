@@ -132,6 +132,10 @@ const isPT = () => {
   return getCurrentLang() === "pt_br";
 };
 
+const isTH = () => {
+  return getCurrentLang() === "th_th":
+};
+
 const $t = (...args: any[]): string => {
   return (i18n.global.t as Function)(...args);
 };
@@ -150,5 +154,6 @@ export {
   isEN,
   isTW,
   isPT,
+  isTH,
   getSupportLanguages
 };
